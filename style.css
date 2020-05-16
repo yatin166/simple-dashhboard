@@ -24,11 +24,26 @@ nav {
 .searchForm {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    align-items: center;
+    width: 30vw;
+    height: 5vh;
+}
+
+input {
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 100%;
+    width: 300px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    box-shadow: 0px 0px 30px 0px white;;
 }
 
 .searchIcon {
     display: none;
+    padding: 20px;
 }
 
 .searchIcon {
@@ -69,7 +84,6 @@ nav {
         right: 0px;
         top:0;
         height: 7vh;
-        background: red;
         width:80%;
         display: flex;
         flex-direction: column;
@@ -77,8 +91,14 @@ nav {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
+    input {
+        box-shadow: 0 0 0 0;
+        height: 5vh;
+        background: white;
+    }
 }
 
 .searchForm-active {
+    right: 5%;
     transform: translateX(0%);
 }
